@@ -26,6 +26,16 @@
                 <button onclick="loadCountry()" type="button" class="btn btn-info text-white">All Country</button>
             </div>
         </section>
+        <section class="w-75 mx-auto mt-4">
+            <div class="input-group mb-3">
+                <input id="search-feild" type="text" class="form-control" placeholder="Search country"
+                    aria-label="country-name" aria-describedby="button-addon2">
+                <button onclick="loadCountryBySearchName()" class="btn btn-outline-info" type="button">Search</button>
+            </div>
+            <div id="details-area">
+
+            </div>
+        </section>
         <section class="mt-4">
 
             <div id="display-area">
@@ -34,14 +44,7 @@
 
         </section>
 
-        <section class="w-75 mx-auto">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Search country" aria-label="country-name"
-                    aria-describedby="button-addon2">
-                <button class="btn btn-outline-info" type="button" id="button-addon2">Search</button>
-            </div>
 
-        </section>
     </main>
 
 
