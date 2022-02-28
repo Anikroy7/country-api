@@ -8,8 +8,17 @@ const loadCountry = () => {
 
 const displayCountry = countries => {
 
+    console.log('anik')
     for (const country of countries) {
-        console.log(country);
-
+        console.log(countries);
+        const displayId = document.getElementById('display-area');
+        const div = document.createElement('div');
+        div.classList.add('display-country')
+        div.innerHTML = `              
+        <h2>${country.name.common}</h2>
+        <p>${country.capital}</p>
+        <p>${country.population}</p>
+        `
+        displayId.appendChild(div)
     }
 }
